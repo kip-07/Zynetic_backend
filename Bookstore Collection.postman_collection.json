@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "47d3f39f-d41b-4bf0-b021-62d9800c5bcd",
+		"name": "Bookstore Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37597204"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/auth/signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"hi@gmail.com\",\r\n    \"password\" : \"123qwer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Hello\",\r\n    \"author\": \"khushi\",\r\n    \"category\": \"hi\",\r\n    \"price\": 123,\r\n    \"rating\": 4,\r\n    \"publishedDate\": \"2022-09-27T00:00:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"moni@gmail.com\",\r\n    \"password\" : \"123qwer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/67f5e4e058408f5ba0e5c8fc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/67f5e4e058408f5ba0e5c8fc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"67f5e4e058408f5ba0e5c8fc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/67f5e4e058408f5ba0e5c8fc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"title\": \"Updated Hello Book\",\r\n     \"price\": 150\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/67f5e4e058408f5ba0e5c8fc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"67f5e4e058408f5ba0e5c8fc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/67f5e4e058408f5ba0e5c8fc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/67f5e4e058408f5ba0e5c8fc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"67f5e4e058408f5ba0e5c8fc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books?author=khushi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books?author=khushi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "khushi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books?category=hi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books?category=hi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "hi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/invalidid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/invalidid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"invalidid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbmlAZ21haWwuY29tIiwic3ViIjoiNjdmNWUzZjM1ODQwOGY1YmEwZTVjOGZhIiwiaWF0IjoxNzQ0MTY3OTI0LCJleHAiOjE3NDQ3NzI3MjR9._PX-ovaenwoQzo-XllzFUwTde6Fj4zd9hJxvuyLS1ws",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"title\": \"Invalid Book\",\r\n     \"author\": \"Test Author\",\r\n     \"category\": \"Test\",\r\n     \"price\": 10.99,\r\n     \"rating\": 6,\r\n     \"publishedDate\": \"2023-01-01\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
