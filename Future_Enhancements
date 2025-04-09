@@ -1,0 +1,26 @@
+## Framework Alternatives
+
+### Express.js Instead of NestJS
+
+While NestJS provides a strong structured framework with many built-in features, it might be beneficial to migrate to Express.js for:
+
+- **Reduced overhead**: Express is more lightweight and has better performance for simpler APIs
+- **Wider community support**: Express has a larger community and more examples available
+- **Simpler learning curve**: Express is less opinionated and easier for new team members to understand
+- **Lower abstraction level**: Gives more direct control over request/response handling
+## Database Enhancements
+
+### MongoDB Indexing Optimizations
+
+- Add compound indexes for frequently filtered fields (author, category, rating)
+- Add text index on book title for improved search performance
+- Implement TTL (Time To Live) index for user tokens
+
+### Database Migration System
+
+- Implement a migration system to manage database schema changes
+- Consider tools like MongoDB Migrations or Mongoose Migrations
+### Rate Limiting
+
+- Implement rate limiting to prevent abuse of the API
+- Add per-user quotas for book creation
