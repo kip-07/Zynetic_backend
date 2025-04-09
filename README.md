@@ -16,6 +16,7 @@ A RESTful API for a Bookstore Application built with NestJS, TypeScript, and Mon
 
 - Node.js (v16 or later)
 - MongoDB (v4 or later)
+- NestJS CLI - For managing the application
 
 ## Setup Instructions
 
@@ -35,8 +36,7 @@ A RESTful API for a Bookstore Application built with NestJS, TypeScript, and Mon
    ```bash
    npm run start:dev
    ```
-5. The API will be available at `http://localhost:3000`
-6. Swagger documentation will be available at `http://localhost:3000/api/docs`
+5. Swagger documentation will be available at `http://localhost:3000/api/docs`
 
 ## API Endpoints
 
@@ -110,4 +110,7 @@ src/
 ├── users/             # Users module
 ├── app.module.ts      # Root module
 ├── main.ts            # Application entry point
+
+tests/
+├── postman/           # Postman collection for API testing
 ``` 
