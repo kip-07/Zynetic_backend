@@ -18,27 +18,6 @@ A RESTful API for a Bookstore Application built with NestJS, TypeScript, and Mon
 - MongoDB (v4 or later)
 - NestJS CLI - For managing the application
 
-## Setup Instructions
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Configure environment variables:
-   Create a `.env` file in the root directory with the following variables:
-   ```
-   MONGODB_URI=mongodb://localhost:27017/bookstore
-   JWT_SECRET=your_jwt_secret_key
-   JWT_EXPIRATION=7d
-   ```
-4. Start the application:
-   ```bash
-   npm run start:dev
-   ```
-5. Swagger documentation will be available at `http://localhost:3000/api/docs`
-
-## API Endpoints
 
 ### Authentication
 
